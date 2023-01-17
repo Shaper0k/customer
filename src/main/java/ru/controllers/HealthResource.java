@@ -23,8 +23,8 @@ public class HealthResource {
         log.debug("REST request to get the Health Status");
         final var health = new Health();
         health.setHealthStatus(HealthStatus.UP);
-        System.out.println("check");
         return ResponseEntity.ok().body(health);
+
     }
 
 }
